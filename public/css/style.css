@@ -29,6 +29,7 @@ header {
     position: fixed;
     width: 100%;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .navbar.scrolling-active {
@@ -238,9 +239,109 @@ header {
     transition: all 0.3s ease;
 }
 
+.shop {
+    padding: 50px 0 100px 0;
+}
+
+.shop .box-shop {
+    color: white;
+    text-align: center;
+}
+
+.shop .box-shop h1 {
+    margin-bottom: 50px;
+}
+
+.shop .box-shop h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.shop .box-shop button {
+    border: none;
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    padding-inline: 20px;
+}
+
+.shop .box-shop button img {
+    width: 3vh;
+    height: 3vh;
+    display: inline-flexbox;
+    margin-inline: 5px;
+}
+
+.footer {
+    padding: 50px 0 50px 0;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.footer .box-footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.footer .box-footer .box {
+    color: white;
+}
+
+.footer .box-footer .box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer .box-footer .box:nth-child(2) a {
+    text-decoration: none;
+    color: white;
+    font-family: 200;
+}
+
+.footer .box-footer .box p {
+    font-weight: 400;
+}
+
+.footer .box-footer .box:nth-child(3) span {
+    font-weight: bold;
+    color: chocolate;
+}
+
+.footer .box-footer .box:nth-child(1) p {
+    font-size: 12px;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.footer .box-footer .box:nth-child(3) {
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
     .hero .box-hero .box:nth-child(1) button {
         width: 150px;
+    }
+
+    .card .box-card .box {
+        height: 55vh;
     }
 }
 
@@ -274,6 +375,19 @@ header {
     .hero .box-hero .box:nth-child(1) p {
         font-size: 14px;
     }
+
+    .shop .box-shop h1 {
+        font-size: 28px;
+    }
+
+    .card .box-card .box {
+        height: 55vh;
+    }
+
+    .footer .box-footer {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -296,11 +410,24 @@ header {
     .hero .box-hero .box:nth-child(2) img {
         width: 60vw;
     }
+
+    .card .box-card .box {
+        height: 55vh;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .hero .box-hero .box:nth-child(1) h1 {
         font-size: 18px;
+    }
+    .card .box-card .box {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    .shop .box-shop button {
+        margin-bottom: 5px;
     }
 }
 

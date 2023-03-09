@@ -21,7 +21,7 @@
 <body>
     <header>
         @include('partials.navbar');
-        <div class="hero">
+        <div class="hero" id="home">
             <div class="container">
                 <div class="box-hero">
                     <div class="box">
@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <div class="box-services">
                 <div class="box">
@@ -62,7 +62,7 @@
     </div>
 
     {{-- Cards Section --}}
-    <div class="card">
+    <div class="card" id="card">
         <div class="container">
             <div class="box-card">
                 <div class="box">
@@ -84,6 +84,39 @@
                     <button>Detail</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    {{-- Shopping Link --}}
+    <div class="shop" id="shop">
+        <div class="container">
+            <div class="box-shop">
+                <h1>Tertarik? <br> Ayo Belanja Sekarang!</h1>
+                <h3>Klik Link Di Bawah Ini</h3>
+                <button><img src="img/wa.png" alt="">Whatsapp</button>
+                <button><img src="img/shopee.png" alt="" >Shopee</button>
+                <button><img src="img/tokped.png" alt=""> Tokopedia</button>
+            </div>
+        </div>
+    </div>
+
+    {{-- Footer --}}
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="box-footer">
+                <div class="box">
+                    <h2>Address</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.187921125382!2d108.5534071!3d-6.7335768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1d8ebc133e3f%3A0x91385801f5822049!2sUNIVERSITAS%20CIC!5e0!3m2!1sen!2sid!4v1678342683928!5m2!1sen!2sid" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="box">
+                <h3>Indonesia Bercerita</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est dignissimos deleniti qui eum, minus quasi.</p>
+                </div>
+                <div class="box">
+                    <p>&copy; Copyright by <span>Indonesia Bercerita</span> All Rights Reserved 2023.</p>
+                </div>
+            </div>
+            
         </div>
     </div>
 

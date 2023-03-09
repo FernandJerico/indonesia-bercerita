@@ -11,4 +11,5 @@ window.addEventListener("scroll", () => {
     console.log(window.scrollY);
     const windowsPosition = window.scrollY > 0;
     navBar.classList.toggle("scrolling-active", windowsPosition);
+    menuNav.classList.remove("menu-active");
 });

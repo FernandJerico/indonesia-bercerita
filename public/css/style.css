@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: chocolate;
+    background-color: rgb(54, 54, 54);
 }
 
 header {
@@ -289,7 +289,7 @@ header {
 
 .footer {
     padding: 50px 0 50px 0;
-    background-color: rgb(54, 54, 54);
+    background-color: chocolate;
     color: white;
 }
 
@@ -322,7 +322,7 @@ header {
 
 .footer .box-footer .box:nth-child(3) span {
     font-weight: bold;
-    color: chocolate;
+    color: white;
 }
 
 .footer .box-footer .box:nth-child(1) p {

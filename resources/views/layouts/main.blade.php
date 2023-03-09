@@ -109,7 +109,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.187921125382!2d108.5534071!3d-6.7335768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1d8ebc133e3f%3A0x91385801f5822049!2sUNIVERSITAS%20CIC!5e0!3m2!1sen!2sid!4v1678342683928!5m2!1sen!2sid" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="box">
-                <h3>Indonesia Bercerita</h3>
+                <h3>Indonesia Bercerita.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est dignissimos deleniti qui eum, minus quasi.</p>
                 </div>
                 <div class="box">

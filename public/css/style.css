@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolling-active {
+    background-color: chocolate;
+    padding: 25px 0 25px 0;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style: none;
+}
+
+.navbar .box-navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: chocolate;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+/* .navbar .box-navbar .menu li a:hover {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--color-primary);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar .box-navbar .menu a:hover:before,
+.navbar .box-navbar .menu li:hover > a:before,
+.navbar .box-navbar .menu .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar .box-navbar .menu a:hover,
+.navbar .box-navbar .menu .active,
+.navbar .box-navbar .menu .active:focus,
+.navbar .box-navbar .menu li:hover > a {
+    color: white;
+} */
+
+.menu-bar {
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.hero .box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .box-hero .box:nth-child(1) h1 {
+    color: white;
+    font-size: 3vw;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero .box-hero .box:nth-child(1) p {
+    line-height: 2;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero .box-hero .box:nth-child(1) button {
+    width: 180px;
+    height: 50px;
+    background-color: chocolate;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero .box-hero .box:nth-child(1) button:hover {
+    background-color: white;
+    color: chocolate;
+    transition: all 0.3s ease;
+}
+
+.hero .box-hero .box:nth-child(2) img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero .box-hero .box:nth-child(1) button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .menu-bar {
+        display: block;
+    }
+
+    .navbar .box-navbar .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+        opacity: 0;
+        transition: all 0.3s ease;
+        /* background-color: chocolate; */
+    }
+
+    .navbar .box-navbar .menu.menu-active {
+        top: 80px;
+        opacity: 1;
+        border-top: 1px solid white;
+    }
+
+    .hero .box-hero .box:nth-child(1) p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+
+    .hero .box-hero .box:nth-child(1) {
+        order: 2;
+        text-align: center;
+    }
+
+    .hero .box-hero .box:nth-child(2) {
+        order: 1;
+        text-align: center;
+    }
+
+    .hero .box-hero .box:nth-child(2) img {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero .box-hero .box:nth-child(1) h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero .box-hero .box:nth-child(2) {
+        width: 60vw;
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+    }
+}

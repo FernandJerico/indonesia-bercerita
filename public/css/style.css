@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: chocolate;
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("../img/hero.jpg");
@@ -149,6 +153,91 @@ header {
     width: 100%;
 }
 
+.services {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0 50px 0;
+}
+
+.services .box-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.services .box-services .box {
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.services .box-services .box p {
+    font-weight: 100;
+}
+
+.services .box-services .box i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card {
+    padding: 50px 0 50px 0;
+}
+
+.card .box-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 60px;
+}
+
+.card .box-card .box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card .box-card .box {
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    height: 50vh;
+    transition: all 0.3s ease;
+}
+
+.card .box-card .box:hover {
+    transform: translateY(-20px);
+}
+
+.card .box-card .box p {
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card .box-card .box button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card .box-card .box button:hover {
+    background-color: rgb(135, 58, 2);
+    transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 1200px) {
     .hero .box-hero .box:nth-child(1) button {
         width: 150px;
@@ -221,5 +310,9 @@ header {
         align-self: flex-end;
         text-align: center;
         justify-content: center;
+    }
+
+    .card .box-card {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }

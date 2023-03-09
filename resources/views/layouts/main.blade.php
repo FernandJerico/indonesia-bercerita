@@ -39,6 +39,54 @@
         </div>
     </header>
 
+    <div class="services">
+        <div class="container">
+            <div class="box-services">
+                <div class="box">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h4>Bahan Premium</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corporis.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <h4>Desain Nuansa Nusantara</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corporis.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h4>Harga Bersahabat</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corporis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Cards Section --}}
+    <div class="card">
+        <div class="container">
+            <div class="box-card">
+                <div class="box">
+                    <img src="img/sawah.jpg" alt="">
+                    <h3>Erigo T-shirt</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae laudantium tenetur facere obcaecati. Obcaecati?</p>
+                    <button>Detail</button>
+                </div>
+                <div class="box">
+                    <img src="img/pantai.jpg" alt="">
+                    <h3>Eiger T-shirt</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae laudantium tenetur facere obcaecati. Obcaecati?</p>
+                    <button>Detail</button>
+                </div>
+                <div class="box">
+                    <img src="img/pulau.jpg" alt="">
+                    <h3>Roughneck T-shirt</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae laudantium tenetur facere obcaecati. Obcaecati?</p>
+                    <button>Detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
